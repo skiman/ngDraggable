@@ -100,7 +100,7 @@
 <div class="row text-center" ng-controller="MainCtrl">
     <ul class="draglist">
         <li ng-repeat="obj in draggableObjects" ng-drop="true" ng-drop-success="onDropComplete($index, $data,$event)">
-            <div ng-drag="true" ng-drag-data="obj" ng-class="obj.name">
+            <div ng-drag="true" ng-drag-data="obj" ng-class="obj.name" ng-center-anchor="true">
                 {{obj.name}}
             </div>
         </li>
